@@ -19,7 +19,7 @@ if not (EMAIL_SENDER and EMAIL_PASSWORD and EMAIL_RECEIVERS):
 recipients = [email.strip() for email in EMAIL_RECEIVERS.split(",")]
 
 # Prepare content
-docx_path = "Release_Notes/Website_Release_Note.docx"
+docx_path = "Website_Release_Note.docx"
 content = read_docx(docx_path)
 
 # Email setup
